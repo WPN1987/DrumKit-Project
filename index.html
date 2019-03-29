@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Will Newman's Drum Kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
+</head>
+<body> 
+
+<div class = "grid-container">
+    <div class = "header">
+        <h1>WPN DRUM KIT</h1>
+    </div> 
+    <div class = "instruct">
+        <p>Welcome! Play the drums by clicking on the sound key or by using your keyboard by entering the correct keycode.</p>
+    </div>
+    <div class = "buttons">  
+        <button type = "button" class = "drumButton" onclick = 'clap.play()'> A <br> Clap </button> 
+        <button type = "button" class = "drumButton" onclick = 'hihat.play()'> S <br> Hihat </button>
+        <button type = "button" class = "drumButton" onclick = 'kick.play()'> D <br> Kick </button>
+        <button type = "button" class = "drumButton" onclick = 'openhat.play()'> F <br> Openhat </button>
+        <button type = "button" class = "drumButton" onclick = 'boom.play()'> G <br> Boom </button>
+        <button type = "button" class = "drumButton" onclick = 'ride.play()'> H <br> Ride </button>
+        <button type = "button" class = "drumButton" onclick = 'snare.play()'> J <br> Snare </button>
+        <button type = "button" class = "drumButton" onclick = 'tom.play()'> K <br> Tom </button>
+        <button type = "button" class = "drumButton" onclick = 'tink.play()'> L <br> Tink </button> 
+    </div>  
+</div class = "grid-container">
+
+    <audio id = 'clap'> <source src = './sounds/clap.wav'> </audio>
+    <audio id = 'hihat'> <source src = './sounds/hihat.wav'> </audio>   
+    <audio id = 'kick'> <source src = './sounds/kick.wav'> </audio>   
+    <audio id = 'openhat'> <source src = './sounds/openhat.wav'> </audio>  
+    <audio id = 'boom'> <source src = './sounds/boom.wav'> </audio>    
+    <audio id = 'ride'> <source src = './sounds/ride.wav'> </audio>
+    <audio id = 'snare'> <source src = './sounds/snare.wav'> </audio>
+    <audio id = 'tom'> <source src = './sounds/tom.wav'> </audio>    
+    <audio id = 'tink'> <source src = './sounds/tink.wav'> </audio>
+
+<script src="app.js"></script> 
+</body>
+</html>

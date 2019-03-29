@@ -1,0 +1,50 @@
+body {
+    margin: 0px; 
+    color:yellowgreen;
+} 
+.grid-container {
+    height: 100vh;
+    width: 100%; 
+    background-image:url(./images/bg.png);
+    background-size:100%;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "instruct instruct instruct"
+        "buttons buttons buttons" 
+} 
+
+.header{
+    grid-area: header;
+    text-shadow: 5px 5px green;
+    font-size: 35px; 
+    display: flex;
+    justify-content: center; 
+} 
+
+.instruct{
+    grid-area: instruct; 
+    font-size: 30px; 
+    display: flex; 
+    justify-content: center; 
+
+}
+
+.buttons {
+    grid-area: buttons; 
+    display: flex; 
+
+    justify-content: space-evenly; 
+}
+.drumButton{
+    height: 60px;
+    width: 85px;
+    border: 5px solid green;
+    background-color: yellowgreen;
+    color:black; 
+    border-radius:50%;
+    font-family: Hanalei Fill; 
+    font-size: 12px;
+}
